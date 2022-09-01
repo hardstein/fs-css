@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+}
+
+nav {
+  box-shadow: 0 3px 5px -2px rgb(176, 176, 176);
+}
+
+ul {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+    margin-bottom: 0.5rem;
+}
+
+nav ul li:first-child {
+    font-weight: 700;
+    font-size: larger;
+}
+
+nav ul > li:last-child {
+  margin-left: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+form {
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+label {
+  margin-left: 1rem;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-size: inherit;
+  display: block;
+  border-radius: 0.25rem;
+  border: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+input[type="text"] {
+    height: 2rem;
+}
+
+input[type="text"],
+textarea {
+  margin-right: 1rem;
+  width: calc(100% - 0.25rem - 1px - 1rem - 1rem);
+  background-color: rgb(251, 251, 251);
+  border: 1px solid rgb(168, 168, 168);
+}
+
+input:first-of-type {
+  width: calc(50% - 0.25rem - 1px - 1rem - 1rem);
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="button"] {
+  padding: 0.3rem 1.8rem;
+  margin-left: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="button"],
+button {
+  background-color: rgb(24, 204, 144);
+  color: white;
+  margin-left: auto;
+}
+
+button {
+  border-radius: 0.25rem;
+  border: none;
+  padding: 0.2rem 0.7rem;
+  float: right;
+}
+
+section {
+  /* border: 1px solid black; */
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+}
+
+h1 {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+
+.toDoList {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.toDoList li {
+  /* border: 1px solid black; */
+  margin: 1rem;
+  padding: 1rem;
+  /* box-shadow: rgba(50, 180, 200, 0.1) 0px 4px 6px -1px, rgba(25, 193, 193, 0.06) 0px 2px 4px -1px; */
+  box-shadow: rgba(50, 180, 200, 0.1) 0px 3px 6px,
+    rgba(25, 193, 193, 0.06) 0px 3px 6px;
+}
+.toDoList li p {
+  font-size: large;
+}
+
+@media only screen and (max-width: 1200px) {
+  section {
+    width: 70%;
+  }
+
+  .toDoList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    width: 91%;
+  }
+
+  .toDoList {
+    grid-template-columns: 1fr;
+  }
+}
